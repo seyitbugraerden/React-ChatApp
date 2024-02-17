@@ -2,7 +2,8 @@ import { useState, useRef } from "react";
 import Auth from "./components/Auth";
 import Cookies from "universal-cookie";
 import Chat from "./components/Chat";
-
+import { Card } from "primereact/card";
+import "./styles/app.css";
 const cookies = new Cookies();
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   const roomInputRef = useRef(null);
 
   return (
-    <>
+    <Card title="Sign In">
       {isSignIn ? (
         room ? (
           <Chat room={room} />
@@ -35,7 +36,7 @@ function App() {
       ) : (
         <Auth setIsSignIn={setIsSignIn} />
       )}
-    </>
+    </Card>
   );
 }
 

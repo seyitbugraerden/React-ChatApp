@@ -1,8 +1,8 @@
 import React from "react";
+import "../styles/social-buttons.css";
 import { auth, provider } from "./config/firebaseConfig";
 import { signInWithPopup } from "firebase/auth";
 import Cookies from "universal-cookie";
-
 const cookies = new Cookies();
 
 const signInWithGoogle = async () => {
@@ -19,7 +19,9 @@ const signInWithGoogle = async () => {
 function Auth({ setIsSignIn }) {
   return (
     <div className="auth">
-      <p>Sign In With Google to Continue</p>
+      <button class="button button--social-login button--facebook" href="#">
+        <i></i>Login With Facebook
+      </button>
       <button onClick={signInWithGoogle}>Click Here for Sign In</button>
     </div>
   );
