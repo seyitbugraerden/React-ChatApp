@@ -6,3 +6,72 @@ body{background-color: #D9AFD9;background-image: linear-gradient(0deg, #D9AFD9 0
 @media(max-width:767px){.auth > div{grid-template-columns: repeat(1,1fr);}}
 .auth > div button{width: 100%;}
 .auth button{display: flex;align-items: center;justify-content: center;gap: 20px;}
+.buttonarea{display: flex;justify-content: center;margin: 0 auto;flex-direction: column;align-items: center;gap: 30px;}
+.p-inputtext{outline: 0 !important;}
+
+.two-part-button {
+    width: 340px;
+    margin: auto;
+    border: 2px solid #DC3522;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .two-part-button:hover {
+    color: #1E1E20;
+  }
+  .two-part-button::after {
+    transition: all 0.5s;
+    width: 0;
+    height: 0px;
+    background-color: transparent easeInOutSine;
+    display: block;
+    content: ' ';
+    position: absolute;
+    left: 0;
+    border-style: solid;
+    border-width: 40px 10px 0 0;
+    border-color: #DC3522 transparent transparent transparent;
+    z-index: -1;
+  }
+  
+  .call-to-action {
+    height: 40px;
+    float:left;
+    background-color: #DC3522;
+    color: #1E1E20;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin-right: 10px;
+  }
+  .call-to-action::after {
+    width: 0;
+    height: 0;
+    content: ' ';
+    display: block;
+    border-style: solid;
+    border-width: 40px 10px 0 0;
+    border-color: #DC3522 transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    right: -10px;
+  }
+  
+  .description {
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    padding: 0;
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
+  
