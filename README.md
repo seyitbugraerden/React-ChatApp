@@ -1,4 +1,4 @@
-<h2>React & Firebase - Chat App (Beginner)</h2>
+<h2>React & Firebase - Chat App (Entry Level)</h2>
 <p>Vercel doesn't use cookies for this project. This means you can't view the actual content hosted on Vercel.</p>
 
 <h4>You need to sign in first.</h4>
