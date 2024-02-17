@@ -15,7 +15,7 @@ function App() {
     <>
       {isSignIn ? (
         room ? (
-          <div>Chat</div>
+          <Chat room={room} />
         ) : (
           <div className="room">
             <input
@@ -28,7 +28,7 @@ function App() {
                 setRoom(roomInputRef.current.value);
               }}
             >
-              <Chat />
+              Enter Chat
             </button>
           </div>
         )
