@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import Auth from "./components/Auth";
 import Cookies from "universal-cookie";
+import Chat from "./components/Chat";
 
 const cookies = new Cookies();
 
@@ -27,7 +28,7 @@ function App() {
                 setRoom(roomInputRef.current.value);
               }}
             >
-              Enter Chat
+              <Chat />
             </button>
           </div>
         )
