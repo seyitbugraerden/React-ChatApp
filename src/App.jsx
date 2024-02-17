@@ -32,7 +32,7 @@ function App() {
           </div>
         )
       ) : (
-        <Auth />
+        <Auth setIsSignIn={setIsSignIn} />
       )}
     </>
   );

@@ -9,12 +9,14 @@ const signInWithGoogle = async () => {
   try {
     const result = await signInWithPopup(auth, provider);
     cookies.set("auth-token", result.user.refreshToken);
+    window.location.reload();
+    setIsSignIn(true);
   } catch (err) {
     console.log(err);
   }
 };
 
-function Auth() {
+function Auth({ setIsSignIn }) {
   return (
     <div className="auth">
       <p>Sign In With Google to Continue</p>
