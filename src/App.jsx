@@ -13,7 +13,7 @@ function App() {
   const roomInputRef = useRef(null);
 
   return (
-    <Card title="Sign In">
+    <Card>
       {isSignIn ? (
         room ? (
           <Chat room={room} />

@@ -19,10 +19,33 @@ const signInWithGoogle = async () => {
 function Auth({ setIsSignIn }) {
   return (
     <div className="auth">
-      <button class="button button--social-login button--facebook" href="#">
-        <i></i>Login With Facebook
-      </button>
-      <button onClick={signInWithGoogle}>Click Here for Sign In</button>
+      <h2>Sign In</h2>
+      <div>
+        <button
+          className="button button--social-login button--googleplus"
+          onClick={signInWithGoogle}
+        >
+          <i className="pi pi-google"></i>Login With Google
+        </button>
+        <button
+          disabled
+          className="button button--social-login button--facebook disabled"
+        >
+          <i className="pi pi-facebook"></i>Login With Facebook
+        </button>
+        <button
+          disabled
+          className="button button--social-login button--linkedin disabled"
+        >
+          <i className="pi pi-linkedin"></i>Login With Linkedin
+        </button>
+        <button
+          disabled
+          className="button button--social-login button--twitter disabled"
+        >
+          <i className="pi pi-twitter"></i>Login With Twitter
+        </button>
+      </div>
     </div>
   );
 }
