@@ -74,4 +74,13 @@ body{background-color: #D9AFD9;background-image: linear-gradient(0deg, #D9AFD9 0
     font-size: 1.5em;
     margin-left: 10px;
   }
-  
+  .text-msg{display: flex;flex-direction: row;justify-content: end;padding: 20px;background-color: #ebebeb; align-items: center;gap: 20px;}
+  .text-msg.left{justify-content: start !important; flex-direction: row-reverse;}
+  .text-msg.left span{float: left;}
+  .text-msg span{float: right;font-size: 12px;margin-top: 0;padding-top: 0;}
+  .text-msg p{max-width: 20vw;word-wrap: break-word;background-color: white;padding: 5px 10px;border-radius: .5em;margin-bottom: 5px;min-width: 200px;}
+  .text-msg img{height: 30px;border-radius: 5em;}
+  .new-message-form{background-color: #ebebeb;padding-top: 50px;padding-bottom: 10px;display: grid;grid-template-columns: 90% 10%;padding-left: 10px;padding-right: 10px;}
+  .new-message-form input{padding: 10px;}
+  .text-msg-area{max-height: 70vh;overflow: auto;}
+  .send-button{background-color: #BFBFDC;border: 0px !important;outline: 0px !important;color: white;cursor: pointer;}

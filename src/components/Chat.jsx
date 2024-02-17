@@ -40,11 +40,23 @@ function Chat({ room }) {
 
   return (
     <div className="chat-app">
-      {messages.map((item) => (
-        <h1 key={item.id}>
-          {item.text} -{item.user}
-        </h1>
-      ))}
+      <div className="text-msg-area">
+        {messages.map((item) => (
+          <div
+            key={item.id}
+            className={`text-msg ${
+              item.user === auth.currentUser.displayName ? "right" : "left"
+            }`}
+          >
+            <div>
+              <p>{item.text}</p>
+              <span>{item.user}</span>
+            </div>
+
+            <img src="https://bozemanschoolsfoundation.org/wp-content/uploads/2018/12/Missing-Person-Image.jpg" />
+          </div>
+        ))}
+      </div>
       <form className="new-message-form" onSubmit={handleSubmit}>
         <input
           type="text"
