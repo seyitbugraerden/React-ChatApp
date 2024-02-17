@@ -1,4 +1,5 @@
 <h2>React & Firebase - Chat App (Beginner)</h2>
+<p>Vercel doesn't use cookies for this project. This means you can't view the actual content hosted on Vercel.</p>
 
 <h4>You need to sign in first.</h4>
 <img src="https://github.com/seyitbugraerden/React-ChatApp/assets/154025499/88cbe523-72ce-4c67-989c-29ba4ecdd59d">
